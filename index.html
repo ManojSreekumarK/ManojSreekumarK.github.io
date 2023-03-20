@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Exam</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="fireworks" class="area">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <!-- <canvas id="canvas"></canvas> -->
+    </div>
+
+    <div class="container">
+      <h1><span>Simple Exam</span></h1>
+      <form id="quiz-form">
+        <div class="question">
+          <h2>Question 1</h2>
+          <p>What is the capital of France?</p>
+          <div class="qp">
+            <label><input type="radio" name="q1" value="a" /> Paris</label>
+            <label><input type="radio" name="q1" value="b" /> London</label>
+            <label><input type="radio" name="q1" value="c" /> Madrid</label>
+          </div>
+        </div>
+        <div class="question">
+          <h2>Question 2</h2>
+          <p>What is the largest country in the world?</p>
+          <div class="qp">
+            <label><input type="radio" name="q2" value="a" /> Russia</label>
+            <label><input type="radio" name="q2" value="b" /> China</label>
+            <label><input type="radio" name="q2" value="c" /> USA</label>
+          </div>
+        </div>
+        <div class="question">
+          <h2>Question 3</h2>
+          <p>What is the capital of Italy?</p>
+          <div class="qp">
+            <label><input type="radio" name="q3" value="a" /> Milan</label>
+            <label><input type="radio" name="q3" value="b" /> Venice</label>
+            <label><input type="radio" name="q3" value="c" /> Rome</label>
+          </div>
+        </div>
+        <div class="question">
+          <h2>Question 4</h2>
+          <p>Which of the following are programming languages?</p>
+          <div class="qp">
+            <label
+              ><input
+                type="checkbox"
+                class="round-checkbox"
+                name="q4"
+                value="a"
+              />
+              HTML</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                class="round-checkbox"
+                name="q4"
+                value="b"
+              />
+              Python</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                class="round-checkbox"
+                name="q4"
+                value="c"
+              />
+              Java</label
+            >
+          </div>
+        </div>
+        <button type="submit" id="submit-button">Submit</button>
+      </form>
+      <div id="result-container">
+        <!-- Results go here -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
